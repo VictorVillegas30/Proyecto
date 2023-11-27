@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con todos los controles</title>
+</head>
+<body>
+
+  <center><h2> Ejemplo de Formulario </h2></center> 
+
+<form action="/submit" method="post">
+  <!-- Input de texto -->
+  <label for="texto">Texto:</label>
+  <input type="text" id="texto" name="texto" required>
+
+  <br>
+
+  <!-- Área de texto -->
+  <label for="areaTexto">Área de Texto:</label>
+  <textarea id="areaTexto" name="areaTexto" rows="4" cols="50" required></textarea>
+
+  <br>
+
+  <!-- Input de contraseña -->
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password" required>
+
+  <br>
+
+  <!-- Input de checkbox -->
+  <input type="checkbox" id="checkbox" name="checkbox" value="si">
+  <label for="checkbox">Acepto los términos y condiciones</label>
+
+  <br>
+
+  <!-- Input de radio -->
+  <input type="radio" id="radio1" name="radio" value="opcion1">
+  <label for="radio1">Opción 1</label>
+
+  <input type="radio" id="radio2" name="radio" value="opcion2">
+  <label for="radio2">Opción 2</label>
+
+  <br>
+
+  <!-- Select -->
+  <label for="seleccion">Selecciona:</label>
+  <select id="seleccion" name="seleccion" required>
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+  </select>
+
+  <br>
+
+  <!-- Input de fecha -->
+  <label for="fecha">Fecha:</label>
+  <input type="date" id="fecha" name="fecha" required>
+
+  <br>
+
+  <!-- Input de color -->
+  <label for="color">Color:</label>
+  <input type="color" id="color" name="color" value="#ff0000">
+
+  <br>
+
+  <!-- Input de número -->
+  <label for="numero">Número:</label>
+  <input type="number" id="numero" name="numero" min="1" max="10" required>
+
+  <br>
+
+  <!-- Input de rango -->
+  <label for="rango">Rango:</label>
+  <input type="range" id="rango" name="rango" min="0" max="100" value="50">
+
+  <br>
+
+  <!-- Input de archivo -->
+  <label for="archivo">Subir Archivo:</label>
+  <input type="file" id="archivo" name="archivo">
+
+  <br>
+
+  <!-- Botón de envío -->
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
